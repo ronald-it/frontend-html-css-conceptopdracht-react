@@ -32,7 +32,7 @@ Hiervoor heb je onder andere kennis nodig van pseudo-elementen, transities, het 
 van `z-index` om elementen boven elkaar te stapelen. Al deze technieken worden besproken in het bonushoofdstuk op
 EdHub (Hfst. 9).
 
-![browser-screenshot](./assets/screenshots/browser-screenshot.png)
+![browser-screenshot](src/assets/screenshots/bonus/bonus-desktop.png)
 
 *Let op:* bovenstaand voorbeeld bevat bonus-opdracht elementen!
 
@@ -135,7 +135,7 @@ een duidelijk plan voor jezelf over hoe je dit gaat aanpakken.
 </span>
 ```
 
-![image-screenshot](./assets/screenshots/image-screenshot.gif)
+![image-screenshot](src/assets/screenshots/image-screenshot.gif)
 
 Vervolgens geven we de afbeelding altijd een `width: 100%`, zodat ze altijd 100% van de *beschikbare ruimte* zullen
 innemen. Het wrapper-element krijgt vervolgens een maximale breedte mee (doormiddel van `max-width` of `flex-basis`),
@@ -208,7 +208,7 @@ aandachtspunten goed door en maak een duidelijk plan voor jezelf over hoe je dit
    Lees [hier](https://css-tricks.com/perfect-full-page-background-image/) meer over de `background-image` property.
 6. Zorg ervoor dat er een transitie ontstaat wanneer de gebruiker over de project-links hovert *(EdHub Hfst. 9.5)*:
 
-![bonus-moving-link](./assets/screenshots/bonus/bonus-moving-link.gif)
+![bonus-moving-link](src/assets/screenshots/bonus/bonus-moving-link.gif)
 
 ## Schermontwerpen
 
