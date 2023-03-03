@@ -5,9 +5,8 @@
     3. Variables
     4. Media Queries
 ////////////////////////*/
-
 /* ------------------------------- 1. Global Styles ----------------------------------- */
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,50 +15,33 @@
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ------------------------------- 3. Variables --------------------------------------- */
-
-$purple: #5722CD;
-$blue: #4845E4;
-$pink: #ED4385;
-$black: #0C0C0C;
-$light-purple: #F2F0FF;
-$light-gray: #F3F6F9;
-$gray: #7A7A7A;
-
 /* ------------------------------- 4. Media Queries --------------------------------------- */
-
-@mixin for-tablet-and-up {
-  @media (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin for-desktop-and-up {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-
 html {
   /* voor mobiel */
   font-size: 16px;
-
-  @include for-tablet-and-up {
+}
+@media (min-width: 768px) {
+  html {
     font-size: 18px;
   }
-
-  @include for-desktop-and-up {
+}
+@media (min-width: 1200px) {
+  html {
     font-size: 20px;
   }
 }
+
+.title {
+  color: #ED4385;
+}
+
+/*# sourceMappingURL=Information.module.css.map */
