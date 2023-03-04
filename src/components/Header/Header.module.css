@@ -46,6 +46,7 @@ header {
   align-items: center;
   background-color: #4845E4;
   color: #F3F6F9;
+  background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
 }
 header * {
   border: none;
@@ -69,16 +70,19 @@ header ul {
     margin-right: 5rem;
   }
 }
-header h1, header h3 {
+header h1, header span {
   text-align: center;
   text-transform: lowercase;
   padding: 1rem 1rem;
 }
-header h1:first-letter, header h3:first-letter {
+header span {
+  font-size: x-large;
+}
+header h1:first-letter, header span:first-letter {
   text-transform: capitalize;
 }
 header img {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 /*# sourceMappingURL=Header.module.css.map */
