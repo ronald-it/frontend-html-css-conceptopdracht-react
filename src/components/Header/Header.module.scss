@@ -1,5 +1,49 @@
 @import "../../index.module.scss";
 
-.title {
-  color: $blue;
+header {
+
+  * {
+    border: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $blue;
+  color: $light-gray;
+
+  nav {
+    padding: 2rem 0 5rem 0;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    @include for-desktop-and-up {
+      justify-content: flex-end;
+
+      li {
+        margin-right: 5rem;
+      }
+    }
+  }
+
+  h1, h3 {
+    text-align: center;
+    text-transform: lowercase;
+    padding: 1rem 1rem;
+  }
+
+  h1:first-letter, h3:first-letter {
+    text-transform: capitalize;
+  }
+
+  img {
+    padding-top: 5rem;
+  }
 }
