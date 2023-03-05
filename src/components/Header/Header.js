@@ -2,8 +2,7 @@ import * as React from 'react';
 import styles from './Header.module.scss';
 import {Button} from "../Button/Button";
 import squiggle from '../../assets/squiggle_line_stripe.svg'
-import {NavLink} from "react-router-dom";
-import {Information} from "../Main/Information/Information";
+import {HashLink} from "react-router-hash-link";
 
 export function Header() {
     return (
@@ -11,10 +10,20 @@ export function Header() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/">case studies</NavLink>
+                        <HashLink className={styles['hash-link']} to="#projects">
+                            case studies
+                        </HashLink>
                     </li>
-                    <li>services</li>
-                    <li>contact us</li>
+                    <li>
+                        <HashLink className={styles['hash-link']} to="#services">
+                            services
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink className={styles['hash-link']} to="#form">
+                            contact us
+                        </HashLink>
+                    </li>
                 </ul>
             </nav>
             <h1>your website is an investment in the success of your business.</h1>

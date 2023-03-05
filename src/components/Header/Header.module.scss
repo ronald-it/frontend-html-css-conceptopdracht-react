@@ -20,10 +20,15 @@ header {
 
   ul {
     display: flex;
-    list-style: none;
     justify-content: space-around;
     text-transform: capitalize;
     font-weight: bold;
+    list-style: none;
+
+    .hash-link {
+      text-decoration: none;
+      color: $light-gray;
+    }
 
     @include for-desktop-and-up {
       justify-content: flex-end;

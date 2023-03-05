@@ -1,8 +1,9 @@
 import * as React from 'react';
-import {Information} from "./Information/Information";
-import {Projects} from "./Projects/Projects";
-import {Services} from "./Services/Services";
-import {Form} from "./Form/Form";
+import styles from './Main.module.scss';
+import {Information} from "../Information/Information";
+import {Projects} from "../Projects/Projects";
+import {Form} from "../Form/Form";
+import {Services} from "../Services/Services";
 
 export function Main() {
     return (
