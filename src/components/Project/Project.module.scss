@@ -3,11 +3,14 @@
 .project-article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 35rem;
 
   @include for-desktop-and-up{
     flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
   }
 
   .projects-div {
@@ -15,15 +18,24 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-  }
+    width: 100%;
 
-  .image-wrapper {
-    display: inline-block;
-    max-width: 35rem;
+    @include for-desktop-and-up {
+      width: 45%;
+    }
   }
 
   .image-wrapper, .article-title, .squiggle-line, .article-text, .project-link {
     margin: 1rem 0;
+  }
+
+  .image-wrapper {
+    display: inline-block;
+    width: 100%;
+
+    @include for-desktop-and-up {
+      width: 45%;
+    }
   }
 
   .work-image {
@@ -44,6 +56,8 @@
   }
 }
 
-.project-article:nth-of-type(even) {
-  flex-direction: row-reverse;
+@include for-desktop-and-up {
+  .project-article:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
 }

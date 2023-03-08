@@ -41,6 +41,7 @@ html {
 }
 
 .information-section {
+  border: none;
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
@@ -55,7 +56,7 @@ html {
   color: #5722CD;
   margin-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .information-section .information-text {
     display: flex;
     max-width: 35rem;

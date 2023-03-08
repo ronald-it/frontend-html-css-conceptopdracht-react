@@ -43,12 +43,15 @@ html {
 .project-article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 35rem;
 }
 @media (min-width: 1200px) {
   .project-article {
     flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
   }
 }
 .project-article .projects-div {
@@ -56,13 +59,24 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
 }
-.project-article .image-wrapper {
-  display: inline-block;
-  max-width: 35rem;
+@media (min-width: 1200px) {
+  .project-article .projects-div {
+    width: 45%;
+  }
 }
 .project-article .image-wrapper, .project-article .article-title, .project-article .squiggle-line, .project-article .article-text, .project-article .project-link {
   margin: 1rem 0;
+}
+.project-article .image-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .project-article .image-wrapper {
+    width: 45%;
+  }
 }
 .project-article .work-image {
   width: 100%;
@@ -79,8 +93,10 @@ html {
   color: #5722CD;
 }
 
-.project-article:nth-of-type(even) {
-  flex-direction: row-reverse;
+@media (min-width: 1200px) {
+  .project-article:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=Project.module.css.map */

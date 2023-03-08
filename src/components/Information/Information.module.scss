@@ -1,6 +1,7 @@
 @import "../../index.module";
 
 .information-section {
+  border: none;
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
     color: $purple;
     margin-bottom: 1rem;
 
-    @include for-tablet-and-up {
+    @include for-desktop-and-up {
       display: flex;
       max-width: 35rem;
     }

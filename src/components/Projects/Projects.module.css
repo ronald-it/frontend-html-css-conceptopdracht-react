@@ -41,12 +41,26 @@ html {
 }
 
 .projects-section {
+  border: none;
   background-color: #F3F6F9;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 1rem 1rem;
+}
+@media (min-width: 768px) {
+  .projects-section {
+    padding: 5rem 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .projects-section {
+    padding: 5rem 3rem;
+  }
+}
+.projects-section * {
+  border: none;
 }
 
 /*# sourceMappingURL=Projects.module.css.map */
