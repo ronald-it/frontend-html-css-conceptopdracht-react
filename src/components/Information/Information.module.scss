@@ -1,5 +1,33 @@
 @import "../../index.module";
 
-.title {
-  color: $pink;
+.information-section {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    border: none;
+  }
+
+  h3 {
+    text-align: center;
+    color: $purple;
+    margin-bottom: 1rem;
+
+    @include for-tablet-and-up {
+      display: flex;
+      max-width: 35rem;
+    }
+  }
+
+  span {
+    margin-top: 1rem;
+
+    .hash-link {
+      text-decoration: none;
+      color: $purple;
+    }
+  }
 }

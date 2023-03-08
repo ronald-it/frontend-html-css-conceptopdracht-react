@@ -40,8 +40,33 @@ html {
   }
 }
 
-.title {
-  color: #ED4385;
+.information-section {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information-section * {
+  border: none;
+}
+.information-section h3 {
+  text-align: center;
+  color: #5722CD;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .information-section h3 {
+    display: flex;
+    max-width: 35rem;
+  }
+}
+.information-section span {
+  margin-top: 1rem;
+}
+.information-section span .hash-link {
+  text-decoration: none;
+  color: #5722CD;
 }
 
 /*# sourceMappingURL=Information.module.css.map */

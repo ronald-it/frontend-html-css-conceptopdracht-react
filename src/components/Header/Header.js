@@ -28,7 +28,9 @@ export function Header() {
             </nav>
             <h1>your website is an investment in the success of your business.</h1>
             <span>we are here to help you succeed.</span>
-            <Button>let's work together</Button>
+            <HashLink className={styles['hash-link']} to="#form">
+                <Button>let's work together</Button>
+            </HashLink>
             <img src={squiggle} alt="squiggle line"/>
         </header>
     );

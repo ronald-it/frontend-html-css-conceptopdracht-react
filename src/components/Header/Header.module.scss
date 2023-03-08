@@ -25,11 +25,6 @@ header {
     font-weight: bold;
     list-style: none;
 
-    .hash-link {
-      text-decoration: none;
-      color: $light-gray;
-    }
-
     @include for-desktop-and-up {
       justify-content: flex-end;
 
@@ -37,6 +32,11 @@ header {
         margin-right: 5rem;
       }
     }
+  }
+
+  .hash-link {
+    text-decoration: none;
+    color: $light-gray;
   }
 
   h1, span {

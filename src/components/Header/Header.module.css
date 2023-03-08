@@ -62,10 +62,6 @@ header ul {
   font-weight: bold;
   list-style: none;
 }
-header ul .hash-link {
-  text-decoration: none;
-  color: #F3F6F9;
-}
 @media (min-width: 1200px) {
   header ul {
     justify-content: flex-end;
@@ -73,6 +69,10 @@ header ul .hash-link {
   header ul li {
     margin-right: 5rem;
   }
+}
+header .hash-link {
+  text-decoration: none;
+  color: #F3F6F9;
 }
 header h1, header span {
   text-align: center;
