@@ -11,7 +11,7 @@
     border: none;
   }
 
-  h3 {
+  .information-text {
     text-align: center;
     color: $purple;
     margin-bottom: 1rem;
@@ -22,7 +22,7 @@
     }
   }
 
-  span {
+  .information-span {
     margin-top: 1rem;
 
     .hash-link {

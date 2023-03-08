@@ -50,21 +50,21 @@ html {
 .information-section * {
   border: none;
 }
-.information-section h3 {
+.information-section .information-text {
   text-align: center;
   color: #5722CD;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .information-section h3 {
+  .information-section .information-text {
     display: flex;
     max-width: 35rem;
   }
 }
-.information-section span {
+.information-section .information-span {
   margin-top: 1rem;
 }
-.information-section span .hash-link {
+.information-section .information-span .hash-link {
   text-decoration: none;
   color: #5722CD;
 }

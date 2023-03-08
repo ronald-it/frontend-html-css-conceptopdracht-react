@@ -1,5 +1,14 @@
 @import "../../index.module";
 
-.title {
-  color: $purple;
+.projects-section {
+  background-color: $light-gray;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+
+  * {
+    //border: none;
+  }
 }

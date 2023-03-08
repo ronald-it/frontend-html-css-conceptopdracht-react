@@ -1,0 +1,49 @@
+@import "../../index.module";
+
+.project-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include for-desktop-and-up{
+    flex-direction: row;
+  }
+
+  .projects-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .image-wrapper {
+    display: inline-block;
+    max-width: 35rem;
+  }
+
+  .image-wrapper, .article-title, .squiggle-line, .article-text, .project-link {
+    margin: 1rem 0;
+  }
+
+  .work-image {
+    width: 100%;
+  }
+
+  .article-title {
+    text-transform: capitalize;
+  }
+
+  .project-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 0.05rem;
+    color: $purple;
+  }
+}
+
+.project-article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}

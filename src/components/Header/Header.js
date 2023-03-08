@@ -7,31 +7,31 @@ import {HashLink} from "react-router-hash-link";
 export function Header() {
     return (
         <header>
-            <nav>
-                <ul>
-                    <li>
+            <nav className={styles['header-nav']}>
+                <ul className={styles['header-ul']}>
+                    <li className={styles['header-li']}>
                         <HashLink className={styles['hash-link']} to="#projects">
                             case studies
                         </HashLink>
                     </li>
-                    <li>
+                    <li className={styles['header-li']}>
                         <HashLink className={styles['hash-link']} to="#services">
                             services
                         </HashLink>
                     </li>
-                    <li>
+                    <li className={styles['header-li']}>
                         <HashLink className={styles['hash-link']} to="#form">
                             contact us
                         </HashLink>
                     </li>
                 </ul>
             </nav>
-            <h1>your website is an investment in the success of your business.</h1>
-            <span>we are here to help you succeed.</span>
+            <h1 className={styles['h1-title']}>your website is an investment in the success of your business.</h1>
+            <span className={styles['header-span']}>we are here to help you succeed.</span>
             <HashLink className={styles['hash-link']} to="#form">
                 <Button>let's work together</Button>
             </HashLink>
-            <img src={squiggle} alt="squiggle line"/>
+            <img className={styles['squiggle-line']} src={squiggle} alt="squiggle line"/>
         </header>
     );
 }

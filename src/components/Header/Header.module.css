@@ -51,11 +51,11 @@ header {
 header * {
   border: none;
 }
-header nav {
+header .header-nav {
   padding: 2rem 0 5rem 0;
   width: 100%;
 }
-header ul {
+header .header-ul {
   display: flex;
   justify-content: space-around;
   text-transform: capitalize;
@@ -63,10 +63,10 @@ header ul {
   list-style: none;
 }
 @media (min-width: 1200px) {
-  header ul {
+  header .header-ul {
     justify-content: flex-end;
   }
-  header ul li {
+  header .header-ul .header-li {
     margin-right: 5rem;
   }
 }
@@ -74,18 +74,18 @@ header .hash-link {
   text-decoration: none;
   color: #F3F6F9;
 }
-header h1, header span {
+header .h1-title, header .header-span {
   text-align: center;
   text-transform: lowercase;
   padding: 1rem 1rem;
 }
-header span {
+header .header-span {
   font-size: x-large;
 }
-header h1:first-letter, header span:first-letter {
+header .h1-title:first-letter, header .header-span:first-letter {
   text-transform: capitalize;
 }
-header img {
+header .squiggle-line {
   padding-top: 4rem;
 }
 

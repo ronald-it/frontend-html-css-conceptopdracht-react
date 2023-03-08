@@ -13,12 +13,12 @@ header {
   color: $light-gray;
   background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
 
-  nav {
+  .header-nav {
     padding: 2rem 0 5rem 0;
     width: 100%;
   }
 
-  ul {
+  .header-ul {
     display: flex;
     justify-content: space-around;
     text-transform: capitalize;
@@ -28,7 +28,7 @@ header {
     @include for-desktop-and-up {
       justify-content: flex-end;
 
-      li {
+      .header-li {
         margin-right: 5rem;
       }
     }
@@ -39,21 +39,21 @@ header {
     color: $light-gray;
   }
 
-  h1, span {
+  .h1-title, .header-span {
     text-align: center;
     text-transform: lowercase;
     padding: 1rem 1rem;
   }
 
-  span {
+  .header-span {
     font-size: x-large;
   }
 
-  h1:first-letter, span:first-letter {
+  .h1-title:first-letter, .header-span:first-letter {
     text-transform: capitalize;
   }
 
-  img {
+  .squiggle-line {
     padding-top: 4rem;
   }
 }

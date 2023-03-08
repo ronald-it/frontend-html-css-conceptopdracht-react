@@ -40,13 +40,47 @@ html {
   }
 }
 
-.projects-section {
-  background-color: #F3F6F9;
+.project-article {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+}
+@media (min-width: 1200px) {
+  .project-article {
+    flex-direction: row;
+  }
+}
+.project-article .projects-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.project-article .image-wrapper {
+  display: inline-block;
+  max-width: 35rem;
+}
+.project-article .image-wrapper, .project-article .article-title, .project-article .squiggle-line, .project-article .article-text, .project-article .project-link {
+  margin: 1rem 0;
+}
+.project-article .work-image {
+  width: 100%;
+}
+.project-article .article-title {
+  text-transform: capitalize;
+}
+.project-article .project-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.05rem;
+  color: #5722CD;
 }
 
-/*# sourceMappingURL=Projects.module.css.map */
+.project-article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=Project.module.css.map */
