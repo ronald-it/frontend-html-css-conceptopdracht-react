@@ -50,8 +50,8 @@ html {
 @media (min-width: 1200px) {
   .project-article {
     flex-direction: row;
-    justify-content: space-between;
-    max-width: none;
+    justify-content: center;
+    max-width: 80rem;
   }
 }
 .project-article .projects-div {
@@ -63,7 +63,7 @@ html {
 }
 @media (min-width: 1200px) {
   .project-article .projects-div {
-    width: 45%;
+    flex: 0 1 25rem;
   }
 }
 .project-article .image-wrapper, .project-article .article-title, .project-article .squiggle-line, .project-article .article-text, .project-article .project-link {
@@ -75,7 +75,8 @@ html {
 }
 @media (min-width: 1200px) {
   .project-article .image-wrapper {
-    width: 45%;
+    flex: 0 1 40rem;
+    margin-right: 8rem;
   }
 }
 .project-article .work-image {
@@ -94,8 +95,12 @@ html {
 }
 
 @media (min-width: 1200px) {
-  .project-article:nth-of-type(even) {
+  .project-article:nth-of-type(odd) {
     flex-direction: row-reverse;
+  }
+  .project-article:nth-of-type(odd) .image-wrapper {
+    margin-right: 0;
+    margin-left: 8rem;
   }
 }
 

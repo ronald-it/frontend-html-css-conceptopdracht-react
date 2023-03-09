@@ -9,14 +9,6 @@
   align-items: center;
   padding: 1rem 1rem;
 
-  @include for-tablet-and-up {
-    padding: 5rem 3rem;
-  }
-
-  @include for-desktop-and-up {
-    padding: 5rem 3rem;
-  }
-
   * {
     border: none;
   }

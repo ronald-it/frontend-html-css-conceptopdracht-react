@@ -49,16 +49,6 @@ html {
   align-items: center;
   padding: 1rem 1rem;
 }
-@media (min-width: 768px) {
-  .projects-section {
-    padding: 5rem 3rem;
-  }
-}
-@media (min-width: 1200px) {
-  .projects-section {
-    padding: 5rem 3rem;
-  }
-}
 .projects-section * {
   border: none;
 }

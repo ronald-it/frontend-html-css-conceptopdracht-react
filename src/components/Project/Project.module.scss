@@ -9,8 +9,8 @@
 
   @include for-desktop-and-up{
     flex-direction: row;
-    justify-content: space-between;
-    max-width: none;
+    justify-content: center;
+    max-width: 80rem;
   }
 
   .projects-div {
@@ -21,7 +21,7 @@
     width: 100%;
 
     @include for-desktop-and-up {
-      width: 45%;
+      flex: 0 1 25rem;
     }
   }
 
@@ -34,7 +34,8 @@
     width: 100%;
 
     @include for-desktop-and-up {
-      width: 45%;
+      flex: 0 1 40rem;
+      margin-right: 8rem;
     }
   }
 
@@ -57,7 +58,12 @@
 }
 
 @include for-desktop-and-up {
-  .project-article:nth-of-type(even) {
+  .project-article:nth-of-type(odd) {
     flex-direction: row-reverse;
+
+    .image-wrapper {
+      margin-right: 0;
+      margin-left: 8rem;
+    }
   }
 }
