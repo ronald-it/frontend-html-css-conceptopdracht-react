@@ -40,8 +40,17 @@ html {
   }
 }
 
-.title {
-  color: #ED4385;
+.services-section {
+  border: none;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 75rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.services-section * {
+  border: none;
 }
 
 /*# sourceMappingURL=Services.module.css.map */

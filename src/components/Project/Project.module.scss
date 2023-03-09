@@ -10,7 +10,7 @@
   @include for-desktop-and-up{
     flex-direction: row;
     justify-content: center;
-    max-width: 80rem;
+    max-width: 75rem;
   }
 
   .projects-div {
@@ -21,7 +21,7 @@
     width: 100%;
 
     @include for-desktop-and-up {
-      flex: 0 1 25rem;
+      flex: 0 1 20rem;
     }
   }
 
@@ -34,7 +34,7 @@
     width: 100%;
 
     @include for-desktop-and-up {
-      flex: 0 1 40rem;
+      flex: 0 1 35rem;
       margin-right: 8rem;
     }
   }

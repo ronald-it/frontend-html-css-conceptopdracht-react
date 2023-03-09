@@ -40,10 +40,38 @@ html {
   }
 }
 
-main {
+.service-article {
+  border: solid 0.05rem #5722CD;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  aspect-ratio: 1/1;
+  flex-basis: 15rem;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+.service-article .service-image {
+  width: 20%;
+  margin-bottom: 0.5rem;
+}
+.service-article .service-title {
+  color: #5722CD;
+  margin-bottom: 0.75rem;
+  font-size: small;
+}
+@media (min-width: 1200px) {
+  .service-article .service-title {
+    font-size: medium;
+  }
+}
+.service-article .service-text {
+  color: #7A7A7A;
+  font-size: x-small;
+}
+@media (min-width: 768px) {
+  .service-article .service-text {
+    font-size: small;
+  }
 }
 
-/*# sourceMappingURL=Main.module.css.map */
+/*# sourceMappingURL=Service.module.css.map */

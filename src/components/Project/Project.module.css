@@ -51,7 +51,7 @@ html {
   .project-article {
     flex-direction: row;
     justify-content: center;
-    max-width: 80rem;
+    max-width: 75rem;
   }
 }
 .project-article .projects-div {
@@ -63,7 +63,7 @@ html {
 }
 @media (min-width: 1200px) {
   .project-article .projects-div {
-    flex: 0 1 25rem;
+    flex: 0 1 20rem;
   }
 }
 .project-article .image-wrapper, .project-article .article-title, .project-article .squiggle-line, .project-article .article-text, .project-article .project-link {
@@ -75,7 +75,7 @@ html {
 }
 @media (min-width: 1200px) {
   .project-article .image-wrapper {
-    flex: 0 1 40rem;
+    flex: 0 1 35rem;
     margin-right: 8rem;
   }
 }
