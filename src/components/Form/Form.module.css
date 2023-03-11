@@ -40,8 +40,43 @@ html {
   }
 }
 
-.title {
-  color: #4845E4;
+.form-section {
+  border: none;
+  background-color: #4845E4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+.form-section * {
+  border: none;
+}
+.form-section .form-title, .form-section .form-text {
+  color: #F3F6F9;
+  margin-bottom: 1rem;
+}
+.form-section .form-title {
+  margin-top: 3rem;
+}
+.form-section form {
+  display: inline-block;
+  max-width: 35rem;
+}
+.form-section label {
+  color: #F3F6F9;
+  font-size: small;
+}
+.form-section textarea {
+  padding: 0.5rem;
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  width: 100%;
+}
+.form-section .button-aligner {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=Form.module.css.map */

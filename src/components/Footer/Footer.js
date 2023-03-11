@@ -4,7 +4,9 @@ import styles from './Footer.module.scss';
 export function Footer() {
     return (
         <footer>
-            <h2 className={styles.title}>Footer</h2>
+{/*            <span>
+                Business website opdracht © NOVI Hogeschool 2022
+            </span>*/}
         </footer>
     );
 }
