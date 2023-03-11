@@ -7,7 +7,7 @@ import worth from "../../assets/work-image-03.jpeg";
 
 export function Projects() {
     return (
-        <section className={styles['projects-section']}>
+        <section id="projects" className={styles['projects-section']}>
             <Project
                 image={stones}
                 title="rolling stone"

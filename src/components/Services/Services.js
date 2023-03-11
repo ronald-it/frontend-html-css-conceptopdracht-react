@@ -10,7 +10,7 @@ import copy from '../../assets/icon_copywriting.svg'
 
 export function Services() {
     return (
-        <section className={styles['services-section']}>
+        <section id="services" className={styles['services-section']}>
             <Service
             image={design}
             title="Web Design"

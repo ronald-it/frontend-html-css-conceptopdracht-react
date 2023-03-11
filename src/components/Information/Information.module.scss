@@ -1,16 +1,11 @@
 @import "../../index.module";
 
 .information-section {
-  border: none;
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  * {
-    border: none;
-  }
 
   .information-text {
     text-align: center;

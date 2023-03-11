@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: solid 0.05rem black;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -41,7 +40,6 @@ html {
 }
 
 .form-section {
-  border: none;
   background-color: #4845E4;
   display: flex;
   flex-direction: column;
