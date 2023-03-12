@@ -47,6 +47,7 @@ html {
   align-items: center;
   width: 100%;
   padding: 1rem;
+  background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
 }
 .form-section * {
   border: none;

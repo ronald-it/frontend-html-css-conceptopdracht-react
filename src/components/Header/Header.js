@@ -29,7 +29,11 @@ export function Header() {
             <h1 className={styles['h1-title']}>your website is an investment in the success of your business.</h1>
             <span className={styles['header-span']}>we are here to help you succeed.</span>
             <HashLink className={styles['hash-link']} to="#form">
-                <Button>let's work together</Button>
+                <Button
+                    type="button"
+                >
+                    let's work together
+                </Button>
             </HashLink>
             <img className={styles['squiggle-line']} src={squiggle} alt="squiggle line"/>
         </header>

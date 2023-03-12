@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styles from './Button.module.scss';
 
-export function Button({children}) {
+export function Button({children, type}) {
     return (
-        <button>
+        <button type={type}>
             {children}
         </button>
     );
