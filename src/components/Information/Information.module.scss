@@ -1,11 +1,22 @@
 @import "../../index.module";
 
 .information-section {
-  padding: 4rem 1rem;
+  position: relative;
+  padding: 8rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
+  .skewer-information {
+    border-bottom: 1.5rem solid $light-gray;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 
   .information-text {
     text-align: center;

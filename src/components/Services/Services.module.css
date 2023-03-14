@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
@@ -40,6 +45,13 @@ html {
 }
 
 .services-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-section .services-inner-container {
   display: flex;
   flex-flow: row wrap;
   max-width: 75rem;

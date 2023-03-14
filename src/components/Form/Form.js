@@ -11,6 +11,8 @@ export function Form() {
 
     return (
         <section className={styles['form-section']}>
+            <div className={styles['skewer-form']}></div>
+
             <h2 id="form" className={styles['form-title']}>Let's work together</h2>
             <p className={styles['form-text']}>Have a question? Need a quote? Let us know!</p>
             <form onSubmit={(e) => {

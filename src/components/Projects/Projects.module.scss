@@ -1,11 +1,21 @@
 @import "../../index.module";
 
 .projects-section {
+  position: relative;
   background-color: $light-gray;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 5rem 1rem;
   width: 100%;
+
+  .skewer-projects {
+    border-bottom: 1.5rem solid white;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 }

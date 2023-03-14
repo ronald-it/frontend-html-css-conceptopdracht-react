@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
@@ -40,6 +45,7 @@ html {
 }
 
 .form-section {
+  position: relative;
   background-color: #4845E4;
   display: flex;
   flex-direction: column;
@@ -48,6 +54,14 @@ html {
   width: 100%;
   padding: 1rem;
   background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
+}
+.form-section .skewer-form {
+  border-top: 1.5rem solid white;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .form-section * {
   border: none;

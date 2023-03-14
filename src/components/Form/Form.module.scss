@@ -1,6 +1,7 @@
 @import "../../index.module";
 
 .form-section {
+  position: relative;
   background-color: $blue;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,15 @@
   width: 100%;
   padding: 1rem;
   background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
+
+  .skewer-form {
+    border-top: 1.5rem solid white;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 
   * {
     border: none;

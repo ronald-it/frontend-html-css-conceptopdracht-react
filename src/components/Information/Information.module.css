@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
@@ -40,11 +45,21 @@ html {
 }
 
 .information-section {
-  padding: 4rem 1rem;
+  position: relative;
+  padding: 8rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.information-section .skewer-information {
+  border-bottom: 1.5rem solid #F3F6F9;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 .information-section .information-text {
   text-align: center;

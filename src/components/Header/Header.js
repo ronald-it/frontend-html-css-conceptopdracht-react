@@ -36,6 +36,7 @@ export function Header() {
                 </Button>
             </HashLink>
             <img className={styles['squiggle-line']} src={squiggle} alt="squiggle line"/>
+            <div className={styles['skewer-header']}></div>
         </header>
     );
 }
