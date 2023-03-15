@@ -89,6 +89,13 @@ html {
 .project-article .article-title {
   text-transform: capitalize;
 }
+.project-article .article-title:after {
+  content: "";
+  display: block;
+  background-image: url("../../assets/squiggle_line.svg");
+  width: 57px;
+  height: 6px;
+}
 .project-article .project-link {
   text-decoration: none;
   text-transform: uppercase;

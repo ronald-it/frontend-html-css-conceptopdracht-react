@@ -47,6 +47,14 @@
     text-transform: capitalize;
   }
 
+  .article-title:after {
+    content: "";
+    display: block;
+    background-image: url("../../assets/squiggle_line.svg");
+    width: 57px;
+    height: 6px;
+  }
+
   .project-link {
     text-decoration: none;
     text-transform: uppercase;
