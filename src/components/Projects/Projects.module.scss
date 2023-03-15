@@ -1,0 +1,46 @@
+@import "../../index.module";
+
+.projects-section {
+  position: relative;
+  background-color: $light-gray;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 1rem;
+  width: 100%;
+
+  * {
+    z-index: 2;
+  }
+
+  .skewer-projects {
+    border-bottom: 1.5rem solid white;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
+
+.projects-section::before {
+  content: "work";
+  color: white;
+  font-size: 30vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 2.5%;
+  z-index: 1;
+
+  @include for-tablet-and-up {
+    top: 0;
+  }
+
+  @include for-desktop-and-up {
+    font-size: 18rem;
+    top: -2.5%;
+  }
+}

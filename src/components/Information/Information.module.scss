@@ -1,0 +1,60 @@
+@import "../../index.module";
+
+.information-section {
+  position: relative;
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  * {
+    z-index: 2;
+  }
+
+  .skewer-information {
+    border-bottom: 1.5rem solid $light-gray;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .information-text {
+    text-align: center;
+    color: $purple;
+    margin-bottom: 1rem;
+
+    @include for-desktop-and-up {
+      display: flex;
+      max-width: 35rem;
+    }
+  }
+
+  .information-span {
+    margin-top: 1rem;
+
+    .hash-link {
+      text-decoration: none;
+      color: $purple;
+    }
+  }
+}
+
+.information-section::before {
+  content: "hello";
+  color: $light-purple;
+  font-size: 30vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  z-index: 1;
+
+  @include for-desktop-and-up {
+    font-size: 18rem;
+  }
+}

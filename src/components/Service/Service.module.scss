@@ -1,0 +1,35 @@
+@import "../../index.module";
+
+.service-article {
+  border: solid 0.05rem $purple;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  flex-basis: 15rem;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+
+  .service-image {
+    width: 20%;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-title {
+    color: $purple;
+    margin-bottom: 0.75rem;
+    font-size: small;
+    @include for-desktop-and-up {
+      font-size: medium;
+    }
+  }
+
+  .service-text {
+    color: $gray;
+    font-size: x-small;
+    @include for-tablet-and-up {
+      font-size: small;
+    }
+  }
+}

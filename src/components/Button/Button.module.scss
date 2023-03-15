@@ -1,0 +1,16 @@
+@import "../../index.module.scss";
+
+button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: $pink;
+  color: $light-gray;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}

@@ -1,0 +1,84 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Variables
+    4. Media Queries
+////////////////////////*/
+/* ------------------------------- 1. Global Styles ----------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------- 3. Variables --------------------------------------- */
+/* ------------------------------- 4. Media Queries --------------------------------------- */
+html {
+  /* voor mobiel */
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.services-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-section * {
+  z-index: 2;
+}
+.services-section .services-inner-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 75rem;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 3rem;
+}
+
+.services-section::before {
+  content: "services";
+  color: #F2F0FF;
+  font-size: 17.5vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  .services-section::before {
+    top: 2.5%;
+    font-size: 10rem;
+  }
+}
+
+/*# sourceMappingURL=Services.module.css.map */

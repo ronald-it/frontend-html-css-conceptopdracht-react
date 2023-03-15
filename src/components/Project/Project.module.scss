@@ -1,0 +1,92 @@
+@import "../../index.module";
+
+.project-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 35rem;
+
+  @include for-desktop-and-up{
+    flex-direction: row;
+    justify-content: center;
+    max-width: 75rem;
+  }
+
+  .projects-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    @include for-desktop-and-up {
+      flex: 0 1 20rem;
+    }
+  }
+
+  .image-wrapper, .article-title, .squiggle-line, .article-text, .project-link {
+    margin: 1rem 0;
+  }
+
+  .image-wrapper {
+    display: inline-block;
+    width: 100%;
+
+    @include for-desktop-and-up {
+      flex: 0 1 35rem;
+      margin-right: 8rem;
+    }
+  }
+
+  .work-image {
+    width: 100%;
+  }
+
+  .article-title {
+    text-transform: capitalize;
+  }
+
+  .article-title:after {
+    content: "";
+    display: block;
+    background-image: url("../../assets/squiggle_line.svg");
+    width: 57px;
+    height: 6px;
+  }
+
+  .project-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 0.05rem;
+    color: $purple;
+  }
+
+  .project-link::after {
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 0.075rem;
+    background-color: $purple;
+    transition: width .35s ease-in-out;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+  }
+
+  .project-link:hover::after {
+    width: 3rem;
+  }
+}
+
+@include for-desktop-and-up {
+  .project-article:nth-of-type(odd) {
+    flex-direction: row-reverse;
+
+    .image-wrapper {
+      margin-right: 0;
+      margin-left: 8rem;
+    }
+  }
+}

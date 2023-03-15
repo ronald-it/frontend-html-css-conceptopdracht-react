@@ -1,0 +1,103 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Variables
+    4. Media Queries
+////////////////////////*/
+/* ------------------------------- 1. Global Styles ----------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------- 3. Variables --------------------------------------- */
+/* ------------------------------- 4. Media Queries --------------------------------------- */
+html {
+  /* voor mobiel */
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.information-section {
+  position: relative;
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.information-section * {
+  z-index: 2;
+}
+.information-section .skewer-information {
+  border-bottom: 1.5rem solid #F3F6F9;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.information-section .information-text {
+  text-align: center;
+  color: #5722CD;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1200px) {
+  .information-section .information-text {
+    display: flex;
+    max-width: 35rem;
+  }
+}
+.information-section .information-span {
+  margin-top: 1rem;
+}
+.information-section .information-span .hash-link {
+  text-decoration: none;
+  color: #5722CD;
+}
+
+.information-section::before {
+  content: "hello";
+  color: #F2F0FF;
+  font-size: 30vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  .information-section::before {
+    font-size: 18rem;
+  }
+}
+
+/*# sourceMappingURL=Information.module.css.map */

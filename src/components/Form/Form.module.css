@@ -1,0 +1,110 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Variables
+    4. Media Queries
+////////////////////////*/
+/* ------------------------------- 1. Global Styles ----------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------- 3. Variables --------------------------------------- */
+/* ------------------------------- 4. Media Queries --------------------------------------- */
+html {
+  /* voor mobiel */
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.form-section {
+  position: relative;
+  background-color: #4845E4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
+  z-index: 1;
+}
+.form-section * {
+  z-index: 3;
+}
+.form-section .skewer-form {
+  border-top: 1.5rem solid white;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-section * {
+  border: none;
+}
+.form-section .form-title, .form-section .form-text {
+  color: #F3F6F9;
+  margin-bottom: 1rem;
+}
+.form-section .form-title {
+  margin-top: 3rem;
+}
+.form-section form {
+  display: inline-block;
+  max-width: 35rem;
+}
+.form-section label {
+  color: #F3F6F9;
+  font-size: small;
+}
+.form-section textarea {
+  padding: 0.5rem;
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  width: 100%;
+}
+.form-section .button-aligner {
+  display: flex;
+  justify-content: center;
+}
+
+.form-section::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../../assets/noise-texture.png");
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=Form.module.css.map */
