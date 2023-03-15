@@ -51,13 +51,34 @@ html {
   justify-content: center;
   align-items: center;
 }
+.services-section * {
+  z-index: 2;
+}
 .services-section .services-inner-container {
   display: flex;
   flex-flow: row wrap;
   max-width: 75rem;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 8rem 3rem;
+}
+
+.services-section::before {
+  content: "services";
+  color: #F2F0FF;
+  font-size: 17.5vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  .services-section::before {
+    top: 2.5%;
+    font-size: 10rem;
+  }
 }
 
 /*# sourceMappingURL=Services.module.css.map */
