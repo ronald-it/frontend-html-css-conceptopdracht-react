@@ -51,8 +51,11 @@ html {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 8rem 1rem;
   width: 100%;
+}
+.projects-section * {
+  z-index: 2;
 }
 .projects-section .skewer-projects {
   border-bottom: 1.5rem solid white;
@@ -60,7 +63,30 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 3;
+}
+
+.projects-section::before {
+  content: "work";
+  color: white;
+  font-size: 30vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 2.5%;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .projects-section::before {
+    top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .projects-section::before {
+    font-size: 18rem;
+    top: -2.5%;
+  }
 }
 
 /*# sourceMappingURL=Projects.module.css.map */
