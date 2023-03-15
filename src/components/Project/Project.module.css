@@ -104,6 +104,19 @@ html {
   letter-spacing: 0.05rem;
   color: #5722CD;
 }
+.project-article .project-link::after {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 0.075rem;
+  background-color: #5722CD;
+  transition: width 0.35s ease-in-out;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+.project-article .project-link:hover::after {
+  width: 3rem;
+}
 
 @media (min-width: 1200px) {
   .project-article:nth-of-type(odd) {
