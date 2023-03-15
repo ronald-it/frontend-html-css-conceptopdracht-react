@@ -52,6 +52,10 @@ header {
   background-color: #4845E4;
   color: #F3F6F9;
   background-image: linear-gradient(to right, #4845e4, #4c3dde, #5035d9, #542cd3, #5722cd);
+  z-index: 1;
+}
+header * {
+  z-index: 3;
 }
 header .skewer-header {
   border-bottom: 1.5rem solid white;
@@ -59,7 +63,6 @@ header .skewer-header {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1;
 }
 header .header-nav {
   padding: 2rem 0 5rem 0;
@@ -97,6 +100,18 @@ header .h1-title:first-letter, header .header-span:first-letter {
 }
 header .squiggle-line {
   padding-top: 4rem;
+}
+
+header::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url("../../assets/noise-texture.png");
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=Header.module.css.map */
